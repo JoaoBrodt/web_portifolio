@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --font: "Open Sans", sans-serif;
+  --preto-fundo: black;
+  --branco_fundo: white;
+  --azul-padrao: #072956;
+  --azul-claro: #3667a7;
+}
+
+body {
+  font-family: var(--font);
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--branco_fundo);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--azul-padrao);
+  border-radius: 0;
+}
+
+header {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.2);
+  background: var(--branco_fundo);
+}
+
+header div p {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--azul-padrao);
+}
+header div {
+  display: flex;
+}
+
+header ul {
+  display: flex;
+  padding-right: 40px;
+}
+header ul li {
+  list-style: none;
+  padding-right: 40px;
+}
+header ul li a {
+  text-decoration: none;
+  color: var(--azul-padrao);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+header ul li a:hover {
+  color: var(--preto-fundo);
+}
+
+.presentation {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  padding-top: 25%;
+  background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p3/11141908-fundo-azul-escuro-linha-moderna-listras-curva-fundo-de-apresentacao-abstrata-com-espaco-de-copia-vetor.jpg);
+}
+
+.presentation_focus {
+  margin-left: 35%;
+}
+
+.presentation div h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 800;
+  color: var(--branco_fundo);
+  padding-bottom: 20px;
+}
+.presentation div p {
+  margin: 30px 20% 60px 20%;
+  color: var(--branco_fundo);
+}
+.button_saber {
+  background-color: transparent;
+  color: var(--branco_fundo);
+  border: 1px solid var(--branco_fundo);
+  padding: 20px 40px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.button_saber:hover {
+  background-color: var(--branco_fundo);
+  border: 1px solid var(--azul-padrao);
+  color: var(--azul-padrao);
+}
+
+.contact {
+  padding: 20px;
+}
+.contact ul {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+.contact ul li {
+  list-style: none;
+}
+
+.contact_icon {
+  width: 16px;
+  height: 16px;
+}
+
+.about {
+  text-align: center;
+  margin: 15% 15%;
+}
+.about h2 {
+  border-bottom: 2px solid var(--azul-padrao);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.habilities {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 60px;
+}
+.skills {
+  margin-left: 10%;
+}
+
+.lista_skill {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.skill {
+  list-style: none;
+  background: var(--azul-padrao);
+  color: var(--branco_fundo);
+  padding: 10px 25px;
+  margin: 20px 20px 10px 0;
+  border-radius: 5px;
+}
+.know p {
+  text-align: justify;
+  line-height: 35px;
+  padding-top: 20px;
+}
+
+.education,
+.work {
+  display: flex;
+  border: 1px solid var(--azul-padrao);
+  margin: 80px 20%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+footer {
+  background: var(--azul-padrao);
+  color: var(--branco_fundo);
+  font-size: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  color: var(--azul-padrao);
+  font-weight: 800;
+}
